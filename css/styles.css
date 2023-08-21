@@ -3,6 +3,10 @@
     min-height: 100%;
 }
 
+.active{
+    font-weight: bold !important;
+}
+
 .body {
     display: flex;
     flex-direction: column;
