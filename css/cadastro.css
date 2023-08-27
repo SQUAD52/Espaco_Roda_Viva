@@ -26,3 +26,8 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+
+#formCadastro{
+  margin-top: 5.5em !important;
+  margin-bottom: 2em !important;
+}
