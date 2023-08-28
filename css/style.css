@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+/*Área cabeçalho*/
+
+header .container nav button{
+    margin: 0 5px 0 5px;
+}
+
+/*Área de especialistas*/
+
+.bg-black .container .card-body{
+    margin: 2rem;
+}
+
+.bg-black .container .card-body img{
+    height: 20rem;
+}
+
+/*Área cadastro*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/*Área footer*/
+
+.socials-paragraph {
+    color: #ffffff !important;
+    font-size: 14px !important;
+  }
+  
+  .socials {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 0 0.5rem 0 !important;
+    gap: 25px !important;
+  }
+  
+  .socials a {
+    text-decoration: none !important;
+    color: #ffffff !important;
+  }
+  
+  .socials a i {
+    font-size: 1.6rem !important;
+    transition: color 0.4s ease !important;
+  }
+  
+  .socials a:hover i {
+    color: aqua !important;
+  }
+  
