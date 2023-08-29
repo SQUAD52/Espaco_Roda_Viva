@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/cadastro.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -65,40 +64,40 @@
 
 	<!--formulãrio para cadastrar-->
 
-	<form class="container-fluid" id="formCadastro">
-		<h2 class="text-center">Preencha todos campos</h2>
-
-		<fieldset class="border my-3">
+	<form class="container-fluid" id="formCadastro" method="get">
+		<h2 class="text-muted text-center">Crie seu perfil em nosso banco de talentos que nós buscamos o seu empregador.</h2>
+		<!--Dados Pessoais-->
+		<fieldset class="my-3">
 			<legend><label class="form-label text-muted" for="">Dados Pessoais:</label></legend>
 			<div class="form-row">
-				<div class=" form-group">
+				<div class=" form-group col-8">
 					<label class="form-label text-muted" for="cadNome">Nome:</label>
-					<input type="text" class="form-control form-control-sm" id="cadNome" placeholder="Nome Completo">
+					<input type="text" class="form-control form-control-sm" id="cadNome" placeholder="Nome Completo" required>
 				</div>
 			</div>
 			<div class="form-row">
-				<div class="col">
+				<div class="col-6">
 					<label class="form-label text-muted" for="cadEmail">E-mail:</label>
-					<input type="email" class="form-control form-control-sm" id="cadEmail" placeholder="E-mail">
+					<input type="email" class="form-control form-control-sm" id="cadEmail" placeholder="E-mail" required>
 				</div>
 			</div>
 			<div class="form-row">
-				<div class="col">
+				<div class="col-4">
 					<label class="form-label text-muted" for="cadNasc">Data Nascimento:</label>
-					<input type="date" class="form-control form-control-sm" id="cadNasc" placeholder="Data Nascimento">
+					<input type="date" class="form-control form-control-sm" id="cadNasc" placeholder="Data Nascimento" required>
 				</div>
 			</div>
-			<fieldset>
+			<fieldset class="my-3 col-4">
 				<legend><label for="" class="form-label text-muted">Sexo:</label></legend>
 				<div class="form-group">
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="radioSexo" id="masculino">
+						<input class="form-check-input" type="radio" name="radioSexo" id="masculino" checked>
 						<label class="form-check-label text-muted" for="masculino">Massculino
 
 						</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="radioSexo" id="Feminino" checked>
+						<input class="form-check-input" type="radio" name="radioSexo" id="Feminino" >
 						<label class="form-check-label text-muted" for="Feminino">
 							Feminino
 						</label>
@@ -106,78 +105,82 @@
 				</div>
 			</fieldset>
 		</fieldset>
-		<fieldset class="border my-3">
+		<!--Endereço-->
+		<fieldset class="my-3">
 			<legend><label class="form-label text-muted" for="">Endereço</label></legend>
-		<div class="form-row">
-			<div class="form-group col-sm">
-				<label class="form-label text-muted" for="inputEnd">Logradouro:</label>
-				<input type="text" class="form-control form-control-sm" id="inputEnd">
+			<div class="form-row">
+				<div class="form-group col-6">
+					<label class="form-label text-muted" for="inputEnd">Logradouro:</label>
+					<input type="text" class="form-control form-control-sm" id="inputEnd" required>
+				</div>
+				<div class="form-group col-4">
+					<label class="form-label text-muted" for="inputCity">Cidade:</label>
+					<input type="text" class="form-control form-control-sm" id="inputCity" required>
+				</div>
+				<div class="form-group col-3">
+					<label class="form-label text-muted" for="inputEstado">Estado:</label>
+					<select id="inputEstado" class="form-control form-control-sm">
+						<option selected>Escolher...</option>
+						<option value="AC">Acre</option>
+						<option value="AL">Alagoas</option>
+						<option value="AP">Amapá</option>
+						<option value="AM">Amazonas</option>
+						<option value="BA">Bahia</option>
+						<option value="CE">Ceará</option>
+						<option value="ES">Espírito Santo</option>
+						<option value="GO">Goiás</option>
+						<option value="MA">Maranhão</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MS">Mato Grosso do Sul</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="PA">Pará</option>
+						<option value="PB">Paraíba</option>
+						<option value="PR">Paraná</option>
+						<option value="PE">Pernambuco</option>
+						<option value="PI">Piauí</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="RN">Rio Grande do Norte</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="RO">Rondônia</option>
+						<option value="RR">Roraima</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="SP">São Paulo</option>
+						<option value="SE">Sergipe</option>
+						<option value="TO">Tocantins</option>
+						<option value="DF">Distrito Federal</option>
+					</select>
+				</div>
+				<div class="form-group col-2">
+					<label class="form-label text-muted" for="inputCEP">CEP:</label>
+					<input type="text" class="form-control form-control-sm" id="inputCEP" maxlength="8" required>
+				</div>
 			</div>
-			<div class="form-group col-sm">
-				<label class="form-label text-muted" for="inputCity">Cidade:</label>
-				<input type="text" class="form-control form-control-sm" id="inputCity">
-			</div>
-			<div class="form-group col-sm">
-				<label class="form-label text-muted" for="inputEstado">Estado:</label>
-				<select id="inputEstado" class="form-control form-control-sm">
-					<option selected>Escolher...</option>
-					<option value="AC">Acre</option>
-					<option value="AL">Alagoas</option>
-					<option value="AP">Amapá</option>
-					<option value="AM">Amazonas</option>
-					<option value="BA">Bahia</option>
-					<option value="CE">Ceará</option>
-					<option value="ES">Espírito Santo</option>
-					<option value="GO">Goiás</option>
-					<option value="MA">Maranhão</option>
-					<option value="MT">Mato Grosso</option>
-					<option value="MS">Mato Grosso do Sul</option>
-					<option value="MG">Minas Gerais</option>
-					<option value="PA">Pará</option>
-					<option value="PB">Paraíba</option>
-					<option value="PR">Paraná</option>
-					<option value="PE">Pernambuco</option>
-					<option value="PI">Piauí</option>
-					<option value="RJ">Rio de Janeiro</option>
-					<option value="RN">Rio Grande do Norte</option>
-					<option value="RS">Rio Grande do Sul</option>
-					<option value="RO">Rondônia</option>
-					<option value="RR">Roraima</option>
-					<option value="SC">Santa Catarina</option>
-					<option value="SP">São Paulo</option>
-					<option value="SE">Sergipe</option>
-					<option value="TO">Tocantins</option>
-					<option value="DF">Distrito Federal</option>
-				</select>
-			</div>
-			<div class="form-group col-sm">
-				<label class="form-label text-muted" for="inputCEP">CEP:</label>
-				<input type="text" class="form-control form-control-sm" id="inputCEP">
-			</div>
-		</div>
 		</fieldset>
-		<fieldset class="border my-3">
+		<!--Cursos-->
+		<fieldset class="my-3">
 			<div class="form-row">
 				<div class="form-group col-sm">
 					<legend><label class="form-label text-muted" for="btnCurso">Cursos e Formações:</label></legend>
-					<div id="cursosCad"></div>
+					<div id="cursosCad" class="col-sm-6"></div>
 					<button type="button" class="btn btn-primary" id="btnCurso"
 						onclick="addCurso('cursosCad')">adicionar</button>
 				</div>
 			</div>
 		</fieldset>
 
-		<fieldset class="border my-3">
+		<!--Experiências-->
+		<fieldset class="my-3">
 			<div class="form-row">
 				<div class="form-group col-sm">
 					<legend><label class="form-label text-muted" for="btnEmpresa">Experiências:</label></legend>
-					<div id="experCad"></div>
+					<div id="experCad" class="col-sm-6"></div>
 					<button type="button" class="btn btn-primary" id="btnEmpresa"
 						onclick="addExperiencia('experCad')">adicionar</button>
 				</div>
 			</div>
 		</fieldset>
-		</div>
+		<input type="submit" class="btn btn-primary" value="Enviar">
+
 	</form>
 	<!--Fim de formulário-->
 
