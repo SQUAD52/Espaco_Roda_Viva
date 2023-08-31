@@ -28,8 +28,8 @@ button[type="submit"]:hover {
 }
 
 #formCadastro{
-  margin-top: 5.5em !important;
-  margin-bottom: 2em !important;
+  padding-top: 6em !important;
+  padding-bottom: 2em !important;
 }
 
 legend{
@@ -40,9 +40,8 @@ legend{
 }
 
 fieldset{
-  border-radius: 5% 0%;
-  border: 2px solid #08d8ef !important;
-	box-shadow: 1px 3px 10px 5px rgb(106, 108, 33);*/
+  border-radius: 1em !important;
+	box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.5);
 	margin: 10px;
   padding: 1rem;
 }
